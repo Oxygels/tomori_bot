@@ -1,0 +1,28 @@
+[package]
+name = "discord_bot"
+version = "0.1.0"
+authors = ["Quentin HOPP <quentin.hopp@outlook.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dotenv = "0.15"
+tracing = "0.1.23"
+url = "2.2.2"
+reqwest = "0.11.3"
+rss = "1.10.0"
+chrono = "0.4.19"
+rand_xoshiro = "0.6.0"
+rand = "0.8.4"
+html2md = "0.2.13"
+
+[dependencies.tokio]
+version = "1.0"
+features = ["macros", "signal", "rt-multi-thread","time","fs"]
+
+[dependencies.serenity]
+default-features = true
+version = "0.10.4"
+
+
